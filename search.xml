@@ -1,6 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>网站迁移：yadongz.com for Hexo</title>
+    <url>/2020/09/12/hello-world/</url>
+    <content><![CDATA[<p>网站从 Flask 迁移至 Hexo 。</p>
+]]></content>
+  </entry>
+  <entry>
     <title>Resume</title>
     <url>/2020/09/12/resume/</url>
     <content><![CDATA[<h2 id="News"><a href="#News" class="headerlink" title="News"></a>News</h2><table>
@@ -133,12 +139,6 @@
 <td align="left">Grade-A in the independent recruitment test and high performance in the college entrance examination.</td>
 </tr>
 </tbody></table>
-]]></content>
-  </entry>
-  <entry>
-    <title>网站迁移：yadongz.com for Hexo</title>
-    <url>/2020/09/12/hello-world/</url>
-    <content><![CDATA[<p>网站从 Flask 迁移至 Hexo 。</p>
 ]]></content>
   </entry>
 </search>
