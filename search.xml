@@ -11,7 +11,9 @@
 <li><em>斜体</em></li>
 <li><a href="/about/">链接</a></li>
 <li>图片 <img src="/images/wechat.gif" alt="QR"></li>
-<li>表情 :fire:</li>
+<li>表情 <span class="github-emoji"><span>👀</span><img src="https://github.githubassets.com/images/icons/emoji/unicode/1f440.png?v8" aria-hidden="true" onerror="this.parent.classList.add('github-emoji-fallback')"></span></li>
+<li>代码：<figure class="highlight python"><table><tbody><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> torch</span><br></pre></td></tr></tbody></table></figure>
+</li>
 </ol>
 ]]></content>
   </entry>
@@ -29,7 +31,7 @@
 <tbody><tr>
 <td align="center">2020.03 - 2020.12</td>
 <td align="center">Time Series Anomaly Detection</td>
-<td align="left"><br> <em>Intro</em>: Anomaly detection and interpretation with Triadic Motif Field based on Transfer Learning. <br> <em>Preprint</em>: <a class="link" href="https://arxiv.org/abs/2012.04936">Yadong Zhang and Xin Chen. Anomaly Detection in Time Series with Triadic Motif Fields and Application in Atrial Fibrillation ECG Classification.<i class="fas fa-external-link-alt"></i></a> <br> <em>Online demo</em>: <a class="link" href="https://mybinder.org/v2/gh/ydup/bokeh/master?urlpath=/proxy/5006/bokeh-app">Binder<i class="fas fa-external-link-alt"></i></a> <br> <a href="https://github.com/ydup/Anomaly-Detection-in-Time-Series-with-Triadic-Motif-Fields"><img src="https://github-readme-stats.vercel.app/api/pin/?username=ydup&repo=Anomaly-Detection-in-Time-Series-with-Triadic-Motif-Fields" alt="Code card"></a></td>
+<td align="left"><br> <em>Intro</em>: Anomaly detection and interpretation with Triadic Motif Field based on Transfer Learning. <br> <em>Preprint</em>: <a class="link" href="https://arxiv.org/abs/2012.04936">Yadong Zhang and Xin Chen. Anomaly Detection in Time Series with Triadic Motif Fields and Application in Atrial Fibrillation ECG Classification.<i class="fas fa-external-link-alt"></i></a> <br> <em>Online demo</em>: <a class="link" href="https://mybinder.org/v2/gh/ydup/bokeh/master?urlpath=/proxy/5006/bokeh-app">Binder<i class="fas fa-external-link-alt"></i></a> <br> <a href="https://github.com/ydup/Anomaly-Detection-in-Time-Series-with-Triadic-Motif-Fields"><img src="https://github-readme-stats.vercel.app/api/pin/?username=ydup&amp;repo=Anomaly-Detection-in-Time-Series-with-Triadic-Motif-Fields" alt="Code card"></a></td>
 </tr>
 </tbody></table>
 <h2 id="Education"><a href="#Education" class="headerlink" title="Education"></a>Education</h2><table>
