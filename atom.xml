@@ -6,7 +6,7 @@
   <link href="https://ydup.github.io/atom.xml" rel="self"/>
   
   <link href="https://ydup.github.io/"/>
-  <updated>2021-03-03T06:27:53.918Z</updated>
+  <updated>2021-03-29T12:52:51.513Z</updated>
   <id>https://ydup.github.io/</id>
   
   <author>
@@ -15,6 +15,27 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>公众号往期精选文章</title>
+    <link href="https://ydup.github.io/2021/03/29/official-account/"/>
+    <id>https://ydup.github.io/2021/03/29/official-account/</id>
+    <published>2021-03-29T08:02:07.000Z</published>
+    <updated>2021-03-29T12:52:51.513Z</updated>
+    
+    <content type="html"><![CDATA[<p>这里列出本人公众号的往期精选文章链接，方便大家快速阅读，后续有时间会逐步迁移和同步个人的一些学习、心得和经验分享，欢迎多多交流~</p><h1 id="机器学习"><a href="#机器学习" class="headerlink" title="机器学习"></a>机器学习</h1><p><a class="link" href="https://mp.weixin.qq.com/s/BH-C-hPwr-YDMhnugxIa2Q">一文带你深入全局平均池化<i class="fas fa-external-link-alt"></i></a></p><h1 id="互联网求职"><a href="#互联网求职" class="headerlink" title="互联网求职"></a>互联网求职</h1><p><a class="link" href="https://mp.weixin.qq.com/s/e4txryTomwKvgd7bJhJ8BQ">「PPT」互联网大厂算法岗求职<i class="fas fa-external-link-alt"></i></a><br><a class="link" href="https://mp.weixin.qq.com/s/doJUSFU7C5Wj4W_96Y4ZsA">非科班可否参与算法野王之战？<i class="fas fa-external-link-alt"></i></a></p><h1 id="可视化"><a href="#可视化" class="headerlink" title="可视化"></a>可视化</h1><p><a class="link" href="https://mp.weixin.qq.com/s/EEB8ToRnVX0iiYQTMsEEJw">给你的算法做个可玩demo【bokeh篇】<i class="fas fa-external-link-alt"></i></a><br><a class="link" href="https://mp.weixin.qq.com/s/heVAdshVzRdFyfCsleDNMw">时空问题之厄尔尼诺预测【附源码】<i class="fas fa-external-link-alt"></i></a><br><a class="link" href="https://mp.weixin.qq.com/s/4S0YA3ydu-y8dS5kgE0Vuw">经济时间序列下载及可视化 【附源码】<i class="fas fa-external-link-alt"></i></a></p><h1 id="强化学习"><a href="#强化学习" class="headerlink" title="强化学习"></a>强化学习</h1><p><a class="link" href="https://mp.weixin.qq.com/s/N31GVFoSm9zvWV1xthbH6w">自动股票交易算法<i class="fas fa-external-link-alt"></i></a><br><a class="link" href="https://mp.weixin.qq.com/s/2MXvQ9RbESQM0rZgcLNUxg">王者荣耀”绝悟”解读<i class="fas fa-external-link-alt"></i></a></p><hr><p>最后，欢迎关注公众号「惊鸿的世界」 <span class="github-emoji"><span>😄</span><img src="https://github.githubassets.com/images/icons/emoji/unicode/1f604.png?v8" aria-hidden="true" onerror="this.parent.classList.add('github-emoji-fallback')"></span><br><img src="/images/wechat.gif" alt="img"></p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;这里列出本人公众号的往期精选文章链接，方便大家快速阅读，后续有时间会逐步迁移和同步个人的一些学习、心得和经验分享，欢迎多多交流~&lt;/p&gt;
+&lt;h1 id=&quot;机器学习&quot;&gt;&lt;a href=&quot;#机器学习&quot; class=&quot;headerlink&quot; title=&quot;机器学习&quot;&gt;&lt;/a&gt;机器</summary>
+      
+    
+    
+    
+    
+  </entry>
   
   <entry>
     <title>Flask -&gt; Hexo 网站迁移及基本功能测试</title>
