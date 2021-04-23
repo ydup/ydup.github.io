@@ -1,6 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>荣获&quot;AI Earch&quot;人工智能挑战赛「创新奖」</title>
+    <url>/2021/04/23/aiearth/</url>
+    <content><![CDATA[<p>我们团队（shakeup is coming）的时空预测方案荣获达摩院和南信大等主办的厄尔尼诺预测大赛的「创新奖」！</p>
+<p>感谢两个月以来队友的努力和老师的指导，感谢主办方们提供的这次技术交流盛会！</p>
+<p>期间认识了很多优秀的小伙伴，在他们身上学到了很多，还有非常nice的评委老师和工作人员们。</p>
+<p>未来主办方会放出比赛录播，欢迎各位朋友一起交流和学习！</p>
+<p><img src="images/me.jpg" alt="me"></p>
+]]></content>
+  </entry>
+  <entry>
     <title>Flask -&gt; Hexo 网站迁移及基本功能测试</title>
     <url>/2021/03/01/hello-world/</url>
     <content><![CDATA[<p>网站从 Flask 迁移至 Hexo 。</p>
