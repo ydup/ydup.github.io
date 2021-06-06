@@ -116,7 +116,7 @@
 </ul>
 </li>
 <li>其次，再看supervisor的配置，supervisor的主要功能是保证Flask始终在后台运行，配置文件是<code>/etc/supervisor/conf.d/qinrenSupervisor.conf </code>，这里关键是写对nginx的路径就可以了，如果没有变动可以不改。<figure class="highlight shell"><table><tbody><tr><td class="code"><pre><span class="line">[program: qinren]</span><br><span class="line"></span><br><span class="line">command=/usr/local/bin/uwsgi /root/Predictive_Front-master/config.ini</span><br><span class="line"></span><br><span class="line">directory=/root/Predictive_Front-master</span><br><span class="line"></span><br><span class="line">user=root</span><br><span class="line"></span><br><span class="line">autostart=true</span><br><span class="line"></span><br><span class="line">autorestart=true</span><br><span class="line"></span><br><span class="line">stdout_logfile=/root/Predictive_Front-master/logs/qinrenSupervisor.log</span><br></pre></td></tr></tbody></table></figure></li>
-<li>以上配置完毕后，在命令行运行下面两个命令，重启supervisor和nginx服务，如果可以通过公网IP访问就基本ok了，最后需要在域名配置对应的公网IP，如果能通过域名访问，就大功告成了！<figure class="highlight shell"><table><tbody><tr><td class="code"><pre><span class="line">service supervisor stop</span><br><span class="line">service nginx stop</span><br></pre></td></tr></tbody></table></figure>
+<li>以上配置完毕后，在命令行运行下面两个命令，重启supervisor和nginx服务，如果可以通过公网IP访问就基本ok了，最后需要在域名配置对应的公网IP，如果能通过域名访问，就大功告成了！<figure class="highlight shell"><table><tbody><tr><td class="code"><pre><span class="line">service supervisor restart</span><br><span class="line">service nginx restart</span><br></pre></td></tr></tbody></table></figure>
 
 </li>
 </ol>
