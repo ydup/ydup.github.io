@@ -124,26 +124,14 @@ Note left of 公网IP: 公网IP:80
 ]]></content>
   </entry>
   <entry>
-    <title>公众号和知乎的往期精选文章</title>
-    <url>/2021/03/29/official-account/</url>
-    <content><![CDATA[<p>这里列出本人公众号和知乎的往期精选文章链接，方便大家快速阅读，后续有时间会逐步迁移和同步个人的一些学习、心得和经验分享，欢迎多多交流~</p>
-<span id="more"></span>
-<h1 id="机器学习"><a href="#机器学习" class="headerlink" title="机器学习"></a>机器学习</h1><p><a href="https://mp.weixin.qq.com/s/BH-C-hPwr-YDMhnugxIa2Q">一文带你深入全局平均池化</a><br><a href="https://www.zhihu.com/question/298639259/answer/713503885">TensorFlow 好难，学 Keras 会不会简单一些？</a><br><a href="https://www.zhihu.com/question/304796104/answer/982859810">时间序列预测有哪些比较好的特征工程技巧？</a><br><a href="https://www.zhihu.com/question/268708083/answer/768093562">怎么能开始会写自己的tensorflow代码？</a></p>
-<h1 id="互联网求职"><a href="#互联网求职" class="headerlink" title="互联网求职"></a>互联网求职</h1><p><a href="https://mp.weixin.qq.com/s/e4txryTomwKvgd7bJhJ8BQ">「PPT」互联网大厂算法岗求职</a><br><a href="https://mp.weixin.qq.com/s/doJUSFU7C5Wj4W_96Y4ZsA">非科班可否参与算法野王之战？</a></p>
-<h1 id="可视化"><a href="#可视化" class="headerlink" title="可视化"></a>可视化</h1><p><a href="https://mp.weixin.qq.com/s/EEB8ToRnVX0iiYQTMsEEJw">给你的算法做个可玩demo</a> | <a href="https://github.com/ydup/bokeh">代码</a><br><a href="https://mp.weixin.qq.com/s/heVAdshVzRdFyfCsleDNMw">时空问题之厄尔尼诺预测EDA</a> | <a href="https://github.com/ydup/ENSO-Forecasting">代码</a><br><a href="https://mp.weixin.qq.com/s/4S0YA3ydu-y8dS5kgE0Vuw">经济时间序列下载及可视化</a> | <a href="https://github.com/ydup/crawling-data-from-fred">代码</a></p>
-<h1 id="强化学习"><a href="#强化学习" class="headerlink" title="强化学习"></a>强化学习</h1><p><a href="https://mp.weixin.qq.com/s/N31GVFoSm9zvWV1xthbH6w">自动股票交易算法</a><br><a href="https://mp.weixin.qq.com/s/2MXvQ9RbESQM0rZgcLNUxg">王者荣耀”绝悟”解读</a></p>
-<hr>
-<p>最后，欢迎关注公众号「亚东的小黑板」 <span class="github-emoji"><span>😄</span><img src="https://github.githubassets.com/images/icons/emoji/unicode/1f604.png?v8" aria-hidden="true" onerror="this.parent.classList.add('github-emoji-fallback')"></span><br><img src="/images/wechat.png" alt="img"></p>
-]]></content>
-  </entry>
-  <entry>
     <title>创新港闲置品信息一览表</title>
-    <url>/2021/06/20/xian/</url>
+    <url>/2021/06/24/xian/</url>
     <content><![CDATA[<p>一年一度的毕业季到啦！作为毕业生的你是不是有很多闲置品不知道该何去何从呢？作为学弟学妹的你是不是最近也正好要入手一些好物呢？这个网页主要目的是把闲置品的信息做一个汇总和归类，以下是给三类人群的使用指南：</p>
 <p><strong>我是毕业生，有闲置品想要出手：</strong></p>
 <ol>
-<li>为了尽可能保证信息来源的有效性，毕业生需要使用 <strong>学校邮箱</strong> （必须是@stu.xjtu.edu.cn哦~） 发送自己的闲置品信息到 <a href="mailto:zhangyadong@stu.xjtu.edu.cn">zhangyadong@stu.xjtu.edu.cn</a>或者<a href="mailto:xjwangjun@stu.xjtu.edu.cn">xjwangjun@stu.xjtu.edu.cn</a>，信息主要包括以下几点：闲置品名称*，设备参数，图片*，原价，现价，联系方式*，其他（*为必须包含，未标注的部分可有可无），我们收到邮件之后会尽快把信息上传到这个网页。</li>
+<li>为了尽可能保证信息来源的有效性，毕业生需要使用 <strong>学校邮箱</strong> （必须是@stu.xjtu.edu.cn哦~） 发送自己的闲置品信息到 <a href="mailto:zhangyadong@stu.xjtu.edu.cn">zhangyadong@stu.xjtu.edu.cn</a>或者<a href="mailto:xjwangjun@stu.xjtu.edu.cn">xjwangjun@stu.xjtu.edu.cn</a>，信息主要包括以下几点：闲置品名称*，设备参数，图片*，原价，现价，联系方式*，其他（*为必须包含，未标注的部分可有可无），管理员收到邮件之后会尽快把信息上传到这个网页。</li>
 <li>如果大家有多个闲置品信息想要公开，建议邮件中写明1，2，3等，方便我们整理。</li>
+<li>一旦物品出售之后，请卖主邮箱告知我们删除对应的记录。</li>
 <li>在该本网页公开信息不收取任何费用，只要您提供的闲置品信息通过管理员审核，管理员都会给大家进行展示。</li>
 </ol>
 <p><strong>我是学弟学妹，有闲置品想要入手：</strong></p>
@@ -229,6 +217,19 @@ Note left of 公网IP: 公网IP:80
 </tr>
 </thead>
 </table>
+]]></content>
+  </entry>
+  <entry>
+    <title>公众号和知乎的往期精选文章</title>
+    <url>/2021/03/29/official-account/</url>
+    <content><![CDATA[<p>这里列出本人公众号和知乎的往期精选文章链接，方便大家快速阅读，后续有时间会逐步迁移和同步个人的一些学习、心得和经验分享，欢迎多多交流~</p>
+<span id="more"></span>
+<h1 id="机器学习"><a href="#机器学习" class="headerlink" title="机器学习"></a>机器学习</h1><p><a href="https://mp.weixin.qq.com/s/BH-C-hPwr-YDMhnugxIa2Q">一文带你深入全局平均池化</a><br><a href="https://www.zhihu.com/question/298639259/answer/713503885">TensorFlow 好难，学 Keras 会不会简单一些？</a><br><a href="https://www.zhihu.com/question/304796104/answer/982859810">时间序列预测有哪些比较好的特征工程技巧？</a><br><a href="https://www.zhihu.com/question/268708083/answer/768093562">怎么能开始会写自己的tensorflow代码？</a></p>
+<h1 id="互联网求职"><a href="#互联网求职" class="headerlink" title="互联网求职"></a>互联网求职</h1><p><a href="https://mp.weixin.qq.com/s/e4txryTomwKvgd7bJhJ8BQ">「PPT」互联网大厂算法岗求职</a><br><a href="https://mp.weixin.qq.com/s/doJUSFU7C5Wj4W_96Y4ZsA">非科班可否参与算法野王之战？</a></p>
+<h1 id="可视化"><a href="#可视化" class="headerlink" title="可视化"></a>可视化</h1><p><a href="https://mp.weixin.qq.com/s/EEB8ToRnVX0iiYQTMsEEJw">给你的算法做个可玩demo</a> | <a href="https://github.com/ydup/bokeh">代码</a><br><a href="https://mp.weixin.qq.com/s/heVAdshVzRdFyfCsleDNMw">时空问题之厄尔尼诺预测EDA</a> | <a href="https://github.com/ydup/ENSO-Forecasting">代码</a><br><a href="https://mp.weixin.qq.com/s/4S0YA3ydu-y8dS5kgE0Vuw">经济时间序列下载及可视化</a> | <a href="https://github.com/ydup/crawling-data-from-fred">代码</a></p>
+<h1 id="强化学习"><a href="#强化学习" class="headerlink" title="强化学习"></a>强化学习</h1><p><a href="https://mp.weixin.qq.com/s/N31GVFoSm9zvWV1xthbH6w">自动股票交易算法</a><br><a href="https://mp.weixin.qq.com/s/2MXvQ9RbESQM0rZgcLNUxg">王者荣耀”绝悟”解读</a></p>
+<hr>
+<p>最后，欢迎关注公众号「亚东的小黑板」 <span class="github-emoji"><span>😄</span><img src="https://github.githubassets.com/images/icons/emoji/unicode/1f604.png?v8" aria-hidden="true" onerror="this.parent.classList.add('github-emoji-fallback')"></span><br><img src="/images/wechat.png" alt="img"></p>
 ]]></content>
   </entry>
 </search>
