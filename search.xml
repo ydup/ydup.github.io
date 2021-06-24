@@ -19,66 +19,6 @@
 ]]></content>
   </entry>
   <entry>
-    <title>「干货」天池大赛首战拿到Top的5条经验</title>
-    <url>/2021/05/23/data-competition/</url>
-    <content><![CDATA[<p><img src="http://cdn.yadongz.com//640.webp" alt="img"></p>
-<p>从偶然看到了天池大赛（2021 “AI Earth”人工智能创新挑战赛）、组队参赛、A榜、B榜到终极赛经历了两个多月，我们团队（shakeup is cominng）取得了不错的成绩：<br>A榜：rank 7/2849<br>B榜：rank 2/2849<br>终极赛：创新奖<br>这次比赛可以说是一次非常典型的数据竞赛，所以作者在这里总结了比赛的经验（套路），希望对参加数据竞赛的小伙伴们有用。如果有不足之处或者补充的内容也欢迎在后台留言。另外，文末有终极赛的视频录播，有兴趣可以观看，一览各位优秀选手的方案和风采。</p>
-<span id="more"></span>
-
-
-<h1 id="数据可视化"><a href="#数据可视化" class="headerlink" title="数据可视化"></a>数据可视化</h1><p>AI竞赛的基础、核心和关键在于数据。除了专业选手之外，大部分选手往往对赛题的领域了解不够深入，前期总是有种”门外汉“的无从下手的无力感。数据可视化可以帮助我们快速理解赛题、数据形式、细节和特性。例如下面这篇<a href="https://mp.weixin.qq.com/s/heVAdshVzRdFyfCsleDNMw">往期文章</a>（点击图片）从数据概览、缺失值、温度场&amp;风场等角度进行了可视化分析，经过几个简单的步骤，对于问题就有了直观的认知，大大避免了一上来不管三七二十一就开始用模型然后暴力调参的盲目和低效。</p>
-<p>数据可视化的另一大优点是，它可以帮助我们探索数据和特征的预处理。复杂的数据和问题前期不知道用什么特征，除了暴力尝试，一种方式是通过文献调研，另一种有效的方式就是在可视化中先进行直观分析，比如统计图、相关性分析、主成分分析等方法，可以帮助我们初步感知和筛选特征是否正确和有效。</p>
-<p><a href="https://mp.weixin.qq.com/s/heVAdshVzRdFyfCsleDNMw"><img src="http://cdn.yadongz.com//640%20(4).png" alt="img"></a></p>
-<p>对于数据可视化，个人建议一开始就要做，因为数据是后续一切的核心和基础，对于数据的理解，可能会在我们对问题不断深入的过程中发生变化，但是从数据可视化开始，相当于你有了一个最直观的“baseline”，了解数据全貌之后，调研、思考才能针对这个”baseline“展开，那么下面讲讲怎么进行文献调研。</p>
-<h1 id="文献调研"><a href="#文献调研" class="headerlink" title="文献调研"></a>文献调研</h1><p>关于文献调研，在<a href="https://mp.weixin.qq.com/s/ILKhJjiJlQrMggcp1ue97A">往期文章</a>（点击图片）里面提到过，下面再补充和梳理一下调研的思路。</p>
-<ol>
-<li>对于一个陌生的场景，建议先看看最近几年的综述，可以帮助我们对这个领域目前比较主流、有效的方法有个结构化的认知，包括快速了解一些新的方法和思路。这个时候可能会遇到：“找不到综述怎么办？”，建议把场景抽象化，例如厄尔尼诺预测其实是一个时空预测问题，那我们可以尝试从“时空预测”这个角度去找，同时厄尔尼诺预测还是一个天气预测问题，也可以从“天气预测”这个角度去找，细心的同学会发现，“时空预测”是个比较大的范畴，除了“天气预测”还可以是“交通预测”，也可以是“视频预测”等等，这个都是可以找综述或者找思路的调研方向。</li>
-<li>看了一些综述之后，需要我们结合问题特点，尝试了解这个领域的背景知识，无非就是三个问题“是什么”、“为什么”、“怎么做”，具体一点，比如“什么是厄尔尼诺现象”，“为什么会有厄尔尼诺现象（成因）”，”传统方法是怎么预测厄尔尼诺“，可以带着这三个问题去看相关的文献，同时边看边想：“怎么用数据刻画/描述？”</li>
-<li>对背景有一些认识之后，针对到数据驱动的模型相关文献，进行调研和学习，可以边看边总结，这种类似的问题都有些什么解决方式，比如LSTM、CNN、Transformer、GNN等，同时最好也能初步想想这些模型/trick在这个场景下，有哪些优缺点，可以有自己预先的经验判断，从而制定后面方案和实验策略。</li>
-</ol>
-<p><a href="https://mp.weixin.qq.com/s/ILKhJjiJlQrMggcp1ue97A"><img src="http://cdn.yadongz.com//640%20(5).png" alt="img"></a></p>
-<p>注：为了书写条理，这里是列了123点表示大概的先后顺序，但是实际调研的时候并不完全是线性按部就班的过程，而是一个发散性、跳跃性、螺旋上升的过程，有些内容需要反复地琢磨和理解。</p>
-<p>调研文献可以给我们制定方案和实验的一些先验的知识和思路，所以接下来就看看怎么规划我们的方案吧。</p>
-<h1 id="方案规划"><a href="#方案规划" class="headerlink" title="方案规划"></a>方案规划</h1><p>根据前面的数据可视化和文献调研，可以把文献中的方法结合赛题数据和自己的思考进行初步的列举，比如baseline系列、加特征系列、魔改模型系列等。</p>
-<ol>
-<li>一般baseline不需要写太多代码，目的是搭建出整个代码的框架以及熟悉结果提交等操作，包括数据加载&amp;预处理、模型搭建、训练、线下验证、线上推理代码等，并且尽量把代码写得模块化以保证可扩展性，完整从零开始到提交线上跑出分数，就算是完成了最基本的baseline，当然也可以在网上参考大家开源的baseline，但是最好是能自己把baseline过清楚、打好基础。跑通整个流程之后，可以尝试一些基础模型LSTM、MLP、CNN、Transformer等，需要注意的是，因为线上提交次数往往比较有限，所以要在baseline阶段留意如何保证线下验证和线上分数的一致性，哪怕没办法保证分数一致，也最好可以确保同升同降，对于后续实验非常重要。</li>
-<li>加特征系列，可以根据自己调研的文献和思考进行特征工程，也可以尝试AutoML自动提取特征。对于有一定问题背景的赛题，最好能多看文献多思考，把先验知识抽象成特征加入模型，往往是会有效果的。</li>
-<li>魔改模型系列，可以是加注意力机制、模型融合、用一些清奇的思路改造模型。当然也是要基于问题背景展开的，比如在这个赛题中尝试加入月份的注意力、把CNN和LSTM深度结合变成ConvLSTM——hidden state变成二维图像等等。</li>
-</ol>
-<p>这里不得不强调数据和特征预处理。高端模型虽好，但是也要建立在正确有效的数据和特征基础上，新手容易犯的错误往往是过度迷信复杂的模型，忽略了数据分布归一化、缺失值填充、特征提取等，导致后面意识到的时候，前面很多实验和结论全部推翻，浪费了大量时间和精力。</p>
-<h1 id="迭代实验-amp-总结结论"><a href="#迭代实验-amp-总结结论" class="headerlink" title="迭代实验&amp;总结结论"></a>迭代实验&amp;总结结论</h1><p>规划一个大致方案之后，就可以开展实验了，在实验过程进一步完善和扩展方案。迭代实验的过程中一定要注意保证控制变量，总结有效结论。</p>
-<p>在上面的方案规划已经基本看出了实验的迭代流程，baseline——加特征——魔改模型。再理一下，三个阶段要回答的几个问题：</p>
-<p>baseline系列：</p>
-<ol>
-<li>流程跑通</li>
-<li>线下如何验证才能和线上分数保持一致</li>
-<li>哪种方式的数据预处理比较有效</li>
-<li>哪种模型的分数比较好</li>
-</ol>
-<p>加特征系列：</p>
-<ol>
-<li>哪些特征有效果</li>
-<li>这个特征的哪个特征提取器比较好</li>
-<li>哪些特征组合有效果</li>
-</ol>
-<p>魔改模型系列：</p>
-<ol>
-<li>哪些trick有效果</li>
-<li>哪些模型融合方式有效果</li>
-</ol>
-<p>除了以上几个通用的问题之外，根据问题特点不同，具体的问题也有所区别，比如数据量比较少的情况下，如何有效地扩充数据？样本不均衡的情况下，如何处理？总而言之，在迭代实验过程中，一定要不断总结结论，避免无效实验和不严谨的实验。</p>
-<h1 id="终极赛视频录播"><a href="#终极赛视频录播" class="headerlink" title="终极赛视频录播"></a>终极赛视频录播</h1><p>大家可以点击下面链接观看。</p>
-<p>上：<a href="https://tianchi.aliyun.com/course/live/1651">https://tianchi.aliyun.com/course/live/1651</a><br>中：<a href="https://tianchi.aliyun.com/course/live/1652">https://tianchi.aliyun.com/course/live/1652</a><br>下：<a href="https://tianchi.aliyun.com/course/live/1653">https://tianchi.aliyun.com/course/live/1653</a></p>
-<p>注：我们团队的分享在「中」的00:54:00开始，快戳链接观看吧~</p>
-<hr>
-<p>最后，作者想强调的是，以上枚举的四点是一个大致的步骤&amp;环节，但是实际往往是发散、跳跃、反复的过程，大家可以不必太拘泥于这个步骤，只要有自己的节奏和规划，杀榜才是王道！</p>
-<p>今天的分享就到这里啦，如果觉得不错欢迎关注！</p>
-<blockquote>
-<p>公众号原文 <a href="https://mp.weixin.qq.com/s/1WcmuUNZWdZ6kHcvCl9qQA">https://mp.weixin.qq.com/s/1WcmuUNZWdZ6kHcvCl9qQA</a></p>
-</blockquote>
-]]></content>
-  </entry>
-  <entry>
     <title>Flask搭网站</title>
     <url>/2021/03/01/flask/</url>
     <content><![CDATA[<p>Flask是常用的python开发web的框架。在服务器上正确部署Flask后，然后将IP地址连接到域名，最后用户就可以通过域名访问IP，最终访问服务器上面部署的网站内容，三者关系如下：<br><mjx-container class="MathJax" jax="SVG" display="true"><svg style="vertical-align: -0.452ex" xmlns="http://www.w3.org/2000/svg" width="23.127ex" height="2.149ex" role="img" focusable="false" viewBox="0 -750 10222.1 950"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="matrix(1 0 0 -1 0 0)"><g data-mml-node="math"><g data-mml-node="mo"><text data-variant="normal" transform="matrix(1 0 0 -1 0 0)" font-size="884px" font-family="serif">服</text><text data-variant="normal" transform="translate(900, 0) matrix(1 0 0 -1 0 0)" font-size="884px" font-family="serif">务</text><text data-variant="normal" transform="translate(1800, 0) matrix(1 0 0 -1 0 0)" font-size="884px" font-family="serif">器</text></g><g data-mml-node="mo" transform="translate(2977.8, 0)"><path data-c="2212" d="M84 237T84 250T98 270H679Q694 262 694 250T679 230H98Q84 237 84 250Z"></path></g><g data-mml-node="mi" transform="translate(3755.8, 0)"><path data-c="1D43C" d="M43 1Q26 1 26 10Q26 12 29 24Q34 43 39 45Q42 46 54 46H60Q120 46 136 53Q137 53 138 54Q143 56 149 77T198 273Q210 318 216 344Q286 624 286 626Q284 630 284 631Q274 637 213 637H193Q184 643 189 662Q193 677 195 680T209 683H213Q285 681 359 681Q481 681 487 683H497Q504 676 504 672T501 655T494 639Q491 637 471 637Q440 637 407 634Q393 631 388 623Q381 609 337 432Q326 385 315 341Q245 65 245 59Q245 52 255 50T307 46H339Q345 38 345 37T342 19Q338 6 332 0H316Q279 2 179 2Q143 2 113 2T65 2T43 1Z"></path></g><g data-mml-node="mi" transform="translate(4259.8, 0)"><path data-c="1D443" d="M287 628Q287 635 230 637Q206 637 199 638T192 648Q192 649 194 659Q200 679 203 681T397 683Q587 682 600 680Q664 669 707 631T751 530Q751 453 685 389Q616 321 507 303Q500 302 402 301H307L277 182Q247 66 247 59Q247 55 248 54T255 50T272 48T305 46H336Q342 37 342 35Q342 19 335 5Q330 0 319 0Q316 0 282 1T182 2Q120 2 87 2T51 1Q33 1 33 11Q33 13 36 25Q40 41 44 43T67 46Q94 46 127 49Q141 52 146 61Q149 65 218 339T287 628ZM645 554Q645 567 643 575T634 597T609 619T560 635Q553 636 480 637Q463 637 445 637T416 636T404 636Q391 635 386 627Q384 621 367 550T332 412T314 344Q314 342 395 342H407H430Q542 342 590 392Q617 419 631 471T645 554Z"></path></g><g data-mml-node="mo" transform="translate(5288.6, 0)"><text data-variant="normal" transform="matrix(1 0 0 -1 0 0)" font-size="884px" font-family="serif">地</text><text data-variant="normal" transform="translate(900, 0) matrix(1 0 0 -1 0 0)" font-size="884px" font-family="serif">址</text></g><g data-mml-node="mo" transform="translate(7366.3, 0)"><path data-c="2212" d="M84 237T84 250T98 270H679Q694 262 694 250T679 230H98Q84 237 84 250Z"></path></g><g data-mml-node="mo" transform="translate(8422.1, 0)"><text data-variant="normal" transform="matrix(1 0 0 -1 0 0)" font-size="884px" font-family="serif">域</text><text data-variant="normal" transform="translate(900, 0) matrix(1 0 0 -1 0 0)" font-size="884px" font-family="serif">名</text></g></g></g></svg></mjx-container><br>关于Flask部署到云端服务器推荐看教程：<a href="https://tsov.net/home/view/2629/#google_vignette">在阿里云上通过Ubuntu+uwsgi+nginx+mysql部署Flask（新手向）</a>，这里讲了从零开始到部署服务器的完整步骤，如果链接失效的话可以直接百度。</p>
@@ -140,14 +80,14 @@ Note left of 公网IP: 公网IP:80
     <title>创新港闲置品信息一览表</title>
     <url>/2021/06/24/xian/</url>
     <content><![CDATA[<p>一年一度的毕业季到啦！作为毕业生的你是不是有很多闲置品不知道该何去何从呢？作为学弟学妹的你是不是最近也正好要入手一些好物呢？这个网页主要目的是把闲置品的信息做一个汇总和归类，以下是给三类人群的使用指南：</p>
-<p><strong>我是毕业生，有闲置品想要出手：</strong></p>
+<p><strong>我是有闲置品想要出手：</strong></p>
 <ol>
 <li>为了尽可能保证信息来源的有效性，毕业生需要使用 <strong>学校邮箱</strong> （必须是@stu.xjtu.edu.cn哦~） 发送自己的闲置品信息到 <a href="mailto:zhangyadong@stu.xjtu.edu.cn">zhangyadong@stu.xjtu.edu.cn</a>或者<a href="mailto:xjwangjun@stu.xjtu.edu.cn">xjwangjun@stu.xjtu.edu.cn</a>，信息主要包括以下几点：闲置品名称*，设备参数，图片*，原价，现价，联系方式*，其他（*为必须包含，未标注的部分可有可无），管理员收到邮件之后会尽快把信息上传到这个网页。</li>
 <li>如果大家有多个闲置品信息想要公开，建议邮件中写明1，2，3等，方便我们整理。</li>
 <li>一旦物品出售之后，请卖主邮箱告知我们删除对应的记录。</li>
 <li>在该本网页公开信息不收取任何费用，只要您提供的闲置品信息通过管理员审核，管理员都会给大家进行展示。</li>
 </ol>
-<p><strong>我是学弟学妹，有闲置品想要入手：</strong></p>
+<p><strong>我有闲置品想要入手：</strong></p>
 <ol>
 <li>本网页会尽量确保闲置品信息来源的真实性，但是不能保证都是真的，希望大家有辨别能力，谨防上当受骗。</li>
 <li>本网页只做信息平台，有入手意愿的同学请自行联系卖主，本网站不收取任何费用。</li>
@@ -291,6 +231,66 @@ Note left of 公网IP: 公网IP:80
 <td>wangxiao2nowang2xiao</td>
 </tr>
 </tbody></table>
+]]></content>
+  </entry>
+  <entry>
+    <title>「干货」天池大赛首战拿到Top的5条经验</title>
+    <url>/2021/05/23/data-competition/</url>
+    <content><![CDATA[<p><img src="http://cdn.yadongz.com//640.webp" alt="img"></p>
+<p>从偶然看到了天池大赛（2021 “AI Earth”人工智能创新挑战赛）、组队参赛、A榜、B榜到终极赛经历了两个多月，我们团队（shakeup is cominng）取得了不错的成绩：<br>A榜：rank 7/2849<br>B榜：rank 2/2849<br>终极赛：创新奖<br>这次比赛可以说是一次非常典型的数据竞赛，所以作者在这里总结了比赛的经验（套路），希望对参加数据竞赛的小伙伴们有用。如果有不足之处或者补充的内容也欢迎在后台留言。另外，文末有终极赛的视频录播，有兴趣可以观看，一览各位优秀选手的方案和风采。</p>
+<span id="more"></span>
+
+
+<h1 id="数据可视化"><a href="#数据可视化" class="headerlink" title="数据可视化"></a>数据可视化</h1><p>AI竞赛的基础、核心和关键在于数据。除了专业选手之外，大部分选手往往对赛题的领域了解不够深入，前期总是有种”门外汉“的无从下手的无力感。数据可视化可以帮助我们快速理解赛题、数据形式、细节和特性。例如下面这篇<a href="https://mp.weixin.qq.com/s/heVAdshVzRdFyfCsleDNMw">往期文章</a>（点击图片）从数据概览、缺失值、温度场&amp;风场等角度进行了可视化分析，经过几个简单的步骤，对于问题就有了直观的认知，大大避免了一上来不管三七二十一就开始用模型然后暴力调参的盲目和低效。</p>
+<p>数据可视化的另一大优点是，它可以帮助我们探索数据和特征的预处理。复杂的数据和问题前期不知道用什么特征，除了暴力尝试，一种方式是通过文献调研，另一种有效的方式就是在可视化中先进行直观分析，比如统计图、相关性分析、主成分分析等方法，可以帮助我们初步感知和筛选特征是否正确和有效。</p>
+<p><a href="https://mp.weixin.qq.com/s/heVAdshVzRdFyfCsleDNMw"><img src="http://cdn.yadongz.com//640%20(4).png" alt="img"></a></p>
+<p>对于数据可视化，个人建议一开始就要做，因为数据是后续一切的核心和基础，对于数据的理解，可能会在我们对问题不断深入的过程中发生变化，但是从数据可视化开始，相当于你有了一个最直观的“baseline”，了解数据全貌之后，调研、思考才能针对这个”baseline“展开，那么下面讲讲怎么进行文献调研。</p>
+<h1 id="文献调研"><a href="#文献调研" class="headerlink" title="文献调研"></a>文献调研</h1><p>关于文献调研，在<a href="https://mp.weixin.qq.com/s/ILKhJjiJlQrMggcp1ue97A">往期文章</a>（点击图片）里面提到过，下面再补充和梳理一下调研的思路。</p>
+<ol>
+<li>对于一个陌生的场景，建议先看看最近几年的综述，可以帮助我们对这个领域目前比较主流、有效的方法有个结构化的认知，包括快速了解一些新的方法和思路。这个时候可能会遇到：“找不到综述怎么办？”，建议把场景抽象化，例如厄尔尼诺预测其实是一个时空预测问题，那我们可以尝试从“时空预测”这个角度去找，同时厄尔尼诺预测还是一个天气预测问题，也可以从“天气预测”这个角度去找，细心的同学会发现，“时空预测”是个比较大的范畴，除了“天气预测”还可以是“交通预测”，也可以是“视频预测”等等，这个都是可以找综述或者找思路的调研方向。</li>
+<li>看了一些综述之后，需要我们结合问题特点，尝试了解这个领域的背景知识，无非就是三个问题“是什么”、“为什么”、“怎么做”，具体一点，比如“什么是厄尔尼诺现象”，“为什么会有厄尔尼诺现象（成因）”，”传统方法是怎么预测厄尔尼诺“，可以带着这三个问题去看相关的文献，同时边看边想：“怎么用数据刻画/描述？”</li>
+<li>对背景有一些认识之后，针对到数据驱动的模型相关文献，进行调研和学习，可以边看边总结，这种类似的问题都有些什么解决方式，比如LSTM、CNN、Transformer、GNN等，同时最好也能初步想想这些模型/trick在这个场景下，有哪些优缺点，可以有自己预先的经验判断，从而制定后面方案和实验策略。</li>
+</ol>
+<p><a href="https://mp.weixin.qq.com/s/ILKhJjiJlQrMggcp1ue97A"><img src="http://cdn.yadongz.com//640%20(5).png" alt="img"></a></p>
+<p>注：为了书写条理，这里是列了123点表示大概的先后顺序，但是实际调研的时候并不完全是线性按部就班的过程，而是一个发散性、跳跃性、螺旋上升的过程，有些内容需要反复地琢磨和理解。</p>
+<p>调研文献可以给我们制定方案和实验的一些先验的知识和思路，所以接下来就看看怎么规划我们的方案吧。</p>
+<h1 id="方案规划"><a href="#方案规划" class="headerlink" title="方案规划"></a>方案规划</h1><p>根据前面的数据可视化和文献调研，可以把文献中的方法结合赛题数据和自己的思考进行初步的列举，比如baseline系列、加特征系列、魔改模型系列等。</p>
+<ol>
+<li>一般baseline不需要写太多代码，目的是搭建出整个代码的框架以及熟悉结果提交等操作，包括数据加载&amp;预处理、模型搭建、训练、线下验证、线上推理代码等，并且尽量把代码写得模块化以保证可扩展性，完整从零开始到提交线上跑出分数，就算是完成了最基本的baseline，当然也可以在网上参考大家开源的baseline，但是最好是能自己把baseline过清楚、打好基础。跑通整个流程之后，可以尝试一些基础模型LSTM、MLP、CNN、Transformer等，需要注意的是，因为线上提交次数往往比较有限，所以要在baseline阶段留意如何保证线下验证和线上分数的一致性，哪怕没办法保证分数一致，也最好可以确保同升同降，对于后续实验非常重要。</li>
+<li>加特征系列，可以根据自己调研的文献和思考进行特征工程，也可以尝试AutoML自动提取特征。对于有一定问题背景的赛题，最好能多看文献多思考，把先验知识抽象成特征加入模型，往往是会有效果的。</li>
+<li>魔改模型系列，可以是加注意力机制、模型融合、用一些清奇的思路改造模型。当然也是要基于问题背景展开的，比如在这个赛题中尝试加入月份的注意力、把CNN和LSTM深度结合变成ConvLSTM——hidden state变成二维图像等等。</li>
+</ol>
+<p>这里不得不强调数据和特征预处理。高端模型虽好，但是也要建立在正确有效的数据和特征基础上，新手容易犯的错误往往是过度迷信复杂的模型，忽略了数据分布归一化、缺失值填充、特征提取等，导致后面意识到的时候，前面很多实验和结论全部推翻，浪费了大量时间和精力。</p>
+<h1 id="迭代实验-amp-总结结论"><a href="#迭代实验-amp-总结结论" class="headerlink" title="迭代实验&amp;总结结论"></a>迭代实验&amp;总结结论</h1><p>规划一个大致方案之后，就可以开展实验了，在实验过程进一步完善和扩展方案。迭代实验的过程中一定要注意保证控制变量，总结有效结论。</p>
+<p>在上面的方案规划已经基本看出了实验的迭代流程，baseline——加特征——魔改模型。再理一下，三个阶段要回答的几个问题：</p>
+<p>baseline系列：</p>
+<ol>
+<li>流程跑通</li>
+<li>线下如何验证才能和线上分数保持一致</li>
+<li>哪种方式的数据预处理比较有效</li>
+<li>哪种模型的分数比较好</li>
+</ol>
+<p>加特征系列：</p>
+<ol>
+<li>哪些特征有效果</li>
+<li>这个特征的哪个特征提取器比较好</li>
+<li>哪些特征组合有效果</li>
+</ol>
+<p>魔改模型系列：</p>
+<ol>
+<li>哪些trick有效果</li>
+<li>哪些模型融合方式有效果</li>
+</ol>
+<p>除了以上几个通用的问题之外，根据问题特点不同，具体的问题也有所区别，比如数据量比较少的情况下，如何有效地扩充数据？样本不均衡的情况下，如何处理？总而言之，在迭代实验过程中，一定要不断总结结论，避免无效实验和不严谨的实验。</p>
+<h1 id="终极赛视频录播"><a href="#终极赛视频录播" class="headerlink" title="终极赛视频录播"></a>终极赛视频录播</h1><p>大家可以点击下面链接观看。</p>
+<p>上：<a href="https://tianchi.aliyun.com/course/live/1651">https://tianchi.aliyun.com/course/live/1651</a><br>中：<a href="https://tianchi.aliyun.com/course/live/1652">https://tianchi.aliyun.com/course/live/1652</a><br>下：<a href="https://tianchi.aliyun.com/course/live/1653">https://tianchi.aliyun.com/course/live/1653</a></p>
+<p>注：我们团队的分享在「中」的00:54:00开始，快戳链接观看吧~</p>
+<hr>
+<p>最后，作者想强调的是，以上枚举的四点是一个大致的步骤&amp;环节，但是实际往往是发散、跳跃、反复的过程，大家可以不必太拘泥于这个步骤，只要有自己的节奏和规划，杀榜才是王道！</p>
+<p>今天的分享就到这里啦，如果觉得不错欢迎关注！</p>
+<blockquote>
+<p>公众号原文 <a href="https://mp.weixin.qq.com/s/1WcmuUNZWdZ6kHcvCl9qQA">https://mp.weixin.qq.com/s/1WcmuUNZWdZ6kHcvCl9qQA</a></p>
+</blockquote>
 ]]></content>
   </entry>
 </search>
