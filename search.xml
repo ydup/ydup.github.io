@@ -1,6 +1,69 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>荣获&quot;AI Earth&quot;人工智能挑战赛「创新奖」</title>
+    <url>/2021/04/23/aiearth/</url>
+    <content><![CDATA[<p>我们团队（shakeup is coming）的时空预测方案荣获达摩院和南信大等主办的厄尔尼诺预测大赛的「创新奖」！</p>
+<span id="more"></span>
+
+<p>感谢两个月以来队友的努力和老师的指导，感谢主办方们提供的这次技术交流盛会！</p>
+<p>期间认识了很多优秀的小伙伴，在他们身上学到了很多，还有非常nice的评委老师和工作人员们。</p>
+<p>比赛录播链接如下，欢迎各位朋友一起交流和学习！</p>
+<ul>
+<li>视频上：<a href="https://tianchi.aliyun.com/course/live/1651">https://tianchi.aliyun.com/course/live/1651</a></li>
+<li>视频中：<a href="https://tianchi.aliyun.com/course/live/1652">https://tianchi.aliyun.com/course/live/1652</a></li>
+<li>视频下：<a href="https://tianchi.aliyun.com/course/live/1653">https://tianchi.aliyun.com/course/live/1653</a></li>
+</ul>
+<p>我们团队的分享在<a href="https://tianchi.aliyun.com/course/live/1652">视频中</a>的00:54:00开始，快戳链接观看吧~</p>
+<p><img src="http://cdn.yadongz.com//13732656.jpg" alt="me"></p>
+]]></content>
+  </entry>
+  <entry>
+    <title>Flask搭网站</title>
+    <url>/2021/03/01/flask/</url>
+    <content><![CDATA[<p>Flask是常用的python开发web的框架。在服务器上正确部署Flask后，然后将IP地址连接到域名，最后用户就可以通过域名访问IP，最终访问服务器上面部署的网站内容，三者关系如下：<br><mjx-container class="MathJax" jax="SVG" display="true"><svg style="vertical-align: -0.452ex" xmlns="http://www.w3.org/2000/svg" width="23.127ex" height="2.149ex" role="img" focusable="false" viewBox="0 -750 10222.1 950"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="matrix(1 0 0 -1 0 0)"><g data-mml-node="math"><g data-mml-node="mo"><text data-variant="normal" transform="matrix(1 0 0 -1 0 0)" font-size="884px" font-family="serif">服</text><text data-variant="normal" transform="translate(900, 0) matrix(1 0 0 -1 0 0)" font-size="884px" font-family="serif">务</text><text data-variant="normal" transform="translate(1800, 0) matrix(1 0 0 -1 0 0)" font-size="884px" font-family="serif">器</text></g><g data-mml-node="mo" transform="translate(2977.8, 0)"><path data-c="2212" d="M84 237T84 250T98 270H679Q694 262 694 250T679 230H98Q84 237 84 250Z"></path></g><g data-mml-node="mi" transform="translate(3755.8, 0)"><path data-c="1D43C" d="M43 1Q26 1 26 10Q26 12 29 24Q34 43 39 45Q42 46 54 46H60Q120 46 136 53Q137 53 138 54Q143 56 149 77T198 273Q210 318 216 344Q286 624 286 626Q284 630 284 631Q274 637 213 637H193Q184 643 189 662Q193 677 195 680T209 683H213Q285 681 359 681Q481 681 487 683H497Q504 676 504 672T501 655T494 639Q491 637 471 637Q440 637 407 634Q393 631 388 623Q381 609 337 432Q326 385 315 341Q245 65 245 59Q245 52 255 50T307 46H339Q345 38 345 37T342 19Q338 6 332 0H316Q279 2 179 2Q143 2 113 2T65 2T43 1Z"></path></g><g data-mml-node="mi" transform="translate(4259.8, 0)"><path data-c="1D443" d="M287 628Q287 635 230 637Q206 637 199 638T192 648Q192 649 194 659Q200 679 203 681T397 683Q587 682 600 680Q664 669 707 631T751 530Q751 453 685 389Q616 321 507 303Q500 302 402 301H307L277 182Q247 66 247 59Q247 55 248 54T255 50T272 48T305 46H336Q342 37 342 35Q342 19 335 5Q330 0 319 0Q316 0 282 1T182 2Q120 2 87 2T51 1Q33 1 33 11Q33 13 36 25Q40 41 44 43T67 46Q94 46 127 49Q141 52 146 61Q149 65 218 339T287 628ZM645 554Q645 567 643 575T634 597T609 619T560 635Q553 636 480 637Q463 637 445 637T416 636T404 636Q391 635 386 627Q384 621 367 550T332 412T314 344Q314 342 395 342H407H430Q542 342 590 392Q617 419 631 471T645 554Z"></path></g><g data-mml-node="mo" transform="translate(5288.6, 0)"><text data-variant="normal" transform="matrix(1 0 0 -1 0 0)" font-size="884px" font-family="serif">地</text><text data-variant="normal" transform="translate(900, 0) matrix(1 0 0 -1 0 0)" font-size="884px" font-family="serif">址</text></g><g data-mml-node="mo" transform="translate(7366.3, 0)"><path data-c="2212" d="M84 237T84 250T98 270H679Q694 262 694 250T679 230H98Q84 237 84 250Z"></path></g><g data-mml-node="mo" transform="translate(8422.1, 0)"><text data-variant="normal" transform="matrix(1 0 0 -1 0 0)" font-size="884px" font-family="serif">域</text><text data-variant="normal" transform="translate(900, 0) matrix(1 0 0 -1 0 0)" font-size="884px" font-family="serif">名</text></g></g></g></svg></mjx-container><br>关于Flask部署到云端服务器推荐看教程：<a href="https://tsov.net/home/view/2629/#google_vignette">在阿里云上通过Ubuntu+uwsgi+nginx+mysql部署Flask（新手向）</a>，这里讲了从零开始到部署服务器的完整步骤，如果链接失效的话可以直接百度。</p>
+<p>这里主要讲一下如何将Flask网站从一个阿里云账号A迁移到另一个账号B，首先需要说明的是，阿里云的云服务器IP无法在账号之间迁移，所以我们只能先迁移网站内容然后再修改IP。这里主要分为几个步骤：</p>
+<span id="more"></span>
+
+<ol>
+<li>账号A将之前的服务器生成镜像，然后共享给账号B。这个时候，账号B就有了A的服务器镜像，但是还没有生成实例。镜像和实例的关系可以理解为镜像是安装包，实例是安装好之后的软件，稍后我们将在账号B上安装镜像。</li>
+<li>账号B如果是新用户的话，可以享受非常可观的优惠，这里推荐“共享型n4 ECS”（新用户大约90元/年），其他参数：带宽可以选1M，实例1核2GB，系统盘40GB。购买之后账号B上就有了一个实例。</li>
+<li>接下来就是将之前账号A的镜像安装在账号B的实例上，这里可以看官方手册<a href="https://help.aliyun.com/document_detail/25448.htm?spm=a2c4g.11186623.2.332.42427dddMVvMZv#concept-vbb-ckj-ydb">更换系统盘</a>。然后账号B上就有了和账号A一模一样的实例。</li>
+<li>上述完成之后，启动账号B上的实例，需要做一下账号B的配置：<ul>
+<li>首先在阿里云网页上配置端口，这里需要说的是，22端口是用ssh登陆服务器的端口，而网站需要一个新的端口，这里由于我们默认用的是80，所以需要加入一条80端口的记录，如下图第一行。<img src="http://cdn.yadongz.com//aliyun-ip.jpg" alt="port"></li>
+<li>然后我们需要在账号B的服务器上配置Flask（因为账号B的公网IP和账号A不同）</li>
+</ul>
+</li>
+</ol>
+<p>这里详细介绍怎么配置账号B的Flask，</p>
+<ol>
+<li>首先是nginx的配置，nginx可以理解为实现桥梁的作用，<ul>
+<li>在Flask运行的端口和中间端口搭桥（映射），这里由Flask工程目录下的<code>config.ini</code>配置实现，<code>stats</code>参数是Flask运行时本地的IP及端口，<code>socket</code>是中间端口，也就是实现了5000-&gt;8001。<figure class="highlight shell"><table><tbody><tr><td class="code"><pre><span class="line">[uwsgi]</span><br><span class="line"></span><br><span class="line">socket = 127.0.0.1:8001</span><br><span class="line"></span><br><span class="line">chdir=/root/Predictive_Front-master/</span><br><span class="line"></span><br><span class="line">wsgi-file=app.py</span><br><span class="line"></span><br><span class="line">callable=app</span><br><span class="line"></span><br><span class="line">processes=4</span><br><span class="line"></span><br><span class="line">threads=2</span><br><span class="line"></span><br><span class="line">stats=127.0.0.1:5000</span><br></pre></td></tr></tbody></table></figure></li>
+<li>然后，在中间端口和公网IP的端口之间搭桥。由<code>/etc/nginx/sites-available/default</code>实现：<code>server_name</code>是公网IP，<code>listen</code>是公网IP的端口，<code>uwsgi_pass</code>是中间IP和端口。<strong>注：这个公网IP是必须要改的。</strong><figure class="highlight shell"><table><tbody><tr><td class="code"><pre><span class="line">server {</span><br><span class="line">        listen 80; # 公网IP的端口，需要和之前阿里云的配置一致</span><br><span class="line">        server_name ip; # 公网IP填在这里，替换ip</span><br><span class="line"></span><br><span class="line">        location / {</span><br><span class="line">                include uwsgi_params;</span><br><span class="line">                uwsgi_pass      127.0.0.1:8001;</span><br><span class="line">                uwsgi_param UWSGI_PYHOME /root/Predictive_Front-master/env;</span><br><span class="line">                uwsgi_param UWSGI_CHDIR /root/Predictive_Front-master;</span><br><span class="line">                uwsgi_param UWSGI_SCRIPT app:app;</span><br><span class="line">        }</span><br><span class="line">}</span><br></pre></td></tr></tbody></table></figure></li>
+</ul>
+</li>
+<li>其次，再看supervisor的配置，supervisor的主要功能是保证Flask始终在后台运行，配置文件是<code>/etc/supervisor/conf.d/qinrenSupervisor.conf </code>，这里关键是写对nginx的路径就可以了，如果没有变动可以不改。<figure class="highlight shell"><table><tbody><tr><td class="code"><pre><span class="line">[program: qinren]</span><br><span class="line"></span><br><span class="line">command=/usr/local/bin/uwsgi /root/Predictive_Front-master/config.ini</span><br><span class="line"></span><br><span class="line">directory=/root/Predictive_Front-master</span><br><span class="line"></span><br><span class="line">user=root</span><br><span class="line"></span><br><span class="line">autostart=true</span><br><span class="line"></span><br><span class="line">autorestart=true</span><br><span class="line"></span><br><span class="line">stdout_logfile=/root/Predictive_Front-master/logs/qinrenSupervisor.log</span><br></pre></td></tr></tbody></table></figure></li>
+<li>以上配置完毕后，在命令行运行下面两个命令，重启supervisor和nginx服务，如果可以通过公网IP访问就基本ok了，最后需要在域名配置对应的公网IP，如果能通过域名访问，就大功告成了！<figure class="highlight shell"><table><tbody><tr><td class="code"><pre><span class="line">service supervisor restart</span><br><span class="line">service nginx restart</span><br></pre></td></tr></tbody></table></figure>
+
+</li>
+</ol>
+<p>最后梳理一下几个关键元素的关系：<br><img src="http://cdn.yadongz.com//flask.png" alt="img"></p>
+<!--
+<div id="sequence-0"></div>
+-->
+
+<hr>
+<p>因为本人对Flask这块只是略懂皮毛，很多词汇和理解可能不太专业，欢迎批评指正<span class="github-emoji"><span>😄</span><img src="https://github.githubassets.com/images/icons/emoji/unicode/1f604.png?v8" aria-hidden="true" onerror="this.parent.classList.add('github-emoji-fallback')"></span>。另外，有任何相关问题可以在评论区提问~<script src="https://cdnjs.cloudflare.com/ajax/libs/webfont/1.6.27/webfontloader.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/snap.svg/0.4.1/snap.svg-min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore-min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/js-sequence-diagrams/1.0.6/sequence-diagram-min.js"></script><textarea id="sequence-0-code" style="display: none">Flask-&gt;nginx: 映射
+nginx-&gt;Flask: 启动
+supervisor-&gt;nginx: 启动
+Note left of Flask: 127.0.0.1:5000
+nginx-&gt;公网IP: 映射
+Note left of nginx: 127.0.0.1:8001
+Note left of 公网IP: 公网IP:80
+公网IP-&gt;域名: 映射</textarea><textarea id="sequence-0-options" style="display: none">{"theme":"simple","scale":1,"line-width":2,"line-length":50,"text-margin":10,"font-size":12}</textarea><script>  var code = document.getElementById("sequence-0-code").value;  var options = JSON.parse(decodeURIComponent(document.getElementById("sequence-0-options").value));  var diagram = Diagram.parse(code);  diagram.drawSVG("sequence-0", options);</script></p>
+]]></content>
+  </entry>
+  <entry>
     <title>「干货」天池大赛首战拿到Top的5条经验</title>
     <url>/2021/05/23/data-competition/</url>
     <content><![CDATA[<p><img src="http://cdn.yadongz.com//640.webp" alt="img"></p>
@@ -74,69 +137,6 @@
 ]]></content>
   </entry>
   <entry>
-    <title>荣获&quot;AI Earth&quot;人工智能挑战赛「创新奖」</title>
-    <url>/2021/04/23/aiearth/</url>
-    <content><![CDATA[<p>我们团队（shakeup is coming）的时空预测方案荣获达摩院和南信大等主办的厄尔尼诺预测大赛的「创新奖」！</p>
-<span id="more"></span>
-
-<p>感谢两个月以来队友的努力和老师的指导，感谢主办方们提供的这次技术交流盛会！</p>
-<p>期间认识了很多优秀的小伙伴，在他们身上学到了很多，还有非常nice的评委老师和工作人员们。</p>
-<p>比赛录播链接如下，欢迎各位朋友一起交流和学习！</p>
-<ul>
-<li>视频上：<a href="https://tianchi.aliyun.com/course/live/1651">https://tianchi.aliyun.com/course/live/1651</a></li>
-<li>视频中：<a href="https://tianchi.aliyun.com/course/live/1652">https://tianchi.aliyun.com/course/live/1652</a></li>
-<li>视频下：<a href="https://tianchi.aliyun.com/course/live/1653">https://tianchi.aliyun.com/course/live/1653</a></li>
-</ul>
-<p>我们团队的分享在<a href="https://tianchi.aliyun.com/course/live/1652">视频中</a>的00:54:00开始，快戳链接观看吧~</p>
-<p><img src="http://cdn.yadongz.com//13732656.jpg" alt="me"></p>
-]]></content>
-  </entry>
-  <entry>
-    <title>Flask搭网站</title>
-    <url>/2021/03/01/flask/</url>
-    <content><![CDATA[<p>Flask是常用的python开发web的框架。在服务器上正确部署Flask后，然后将IP地址连接到域名，最后用户就可以通过域名访问IP，最终访问服务器上面部署的网站内容，三者关系如下：<br><mjx-container class="MathJax" jax="SVG" display="true"><svg style="vertical-align: -0.452ex" xmlns="http://www.w3.org/2000/svg" width="23.127ex" height="2.149ex" role="img" focusable="false" viewBox="0 -750 10222.1 950"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="matrix(1 0 0 -1 0 0)"><g data-mml-node="math"><g data-mml-node="mo"><text data-variant="normal" transform="matrix(1 0 0 -1 0 0)" font-size="884px" font-family="serif">服</text><text data-variant="normal" transform="translate(900, 0) matrix(1 0 0 -1 0 0)" font-size="884px" font-family="serif">务</text><text data-variant="normal" transform="translate(1800, 0) matrix(1 0 0 -1 0 0)" font-size="884px" font-family="serif">器</text></g><g data-mml-node="mo" transform="translate(2977.8, 0)"><path data-c="2212" d="M84 237T84 250T98 270H679Q694 262 694 250T679 230H98Q84 237 84 250Z"></path></g><g data-mml-node="mi" transform="translate(3755.8, 0)"><path data-c="1D43C" d="M43 1Q26 1 26 10Q26 12 29 24Q34 43 39 45Q42 46 54 46H60Q120 46 136 53Q137 53 138 54Q143 56 149 77T198 273Q210 318 216 344Q286 624 286 626Q284 630 284 631Q274 637 213 637H193Q184 643 189 662Q193 677 195 680T209 683H213Q285 681 359 681Q481 681 487 683H497Q504 676 504 672T501 655T494 639Q491 637 471 637Q440 637 407 634Q393 631 388 623Q381 609 337 432Q326 385 315 341Q245 65 245 59Q245 52 255 50T307 46H339Q345 38 345 37T342 19Q338 6 332 0H316Q279 2 179 2Q143 2 113 2T65 2T43 1Z"></path></g><g data-mml-node="mi" transform="translate(4259.8, 0)"><path data-c="1D443" d="M287 628Q287 635 230 637Q206 637 199 638T192 648Q192 649 194 659Q200 679 203 681T397 683Q587 682 600 680Q664 669 707 631T751 530Q751 453 685 389Q616 321 507 303Q500 302 402 301H307L277 182Q247 66 247 59Q247 55 248 54T255 50T272 48T305 46H336Q342 37 342 35Q342 19 335 5Q330 0 319 0Q316 0 282 1T182 2Q120 2 87 2T51 1Q33 1 33 11Q33 13 36 25Q40 41 44 43T67 46Q94 46 127 49Q141 52 146 61Q149 65 218 339T287 628ZM645 554Q645 567 643 575T634 597T609 619T560 635Q553 636 480 637Q463 637 445 637T416 636T404 636Q391 635 386 627Q384 621 367 550T332 412T314 344Q314 342 395 342H407H430Q542 342 590 392Q617 419 631 471T645 554Z"></path></g><g data-mml-node="mo" transform="translate(5288.6, 0)"><text data-variant="normal" transform="matrix(1 0 0 -1 0 0)" font-size="884px" font-family="serif">地</text><text data-variant="normal" transform="translate(900, 0) matrix(1 0 0 -1 0 0)" font-size="884px" font-family="serif">址</text></g><g data-mml-node="mo" transform="translate(7366.3, 0)"><path data-c="2212" d="M84 237T84 250T98 270H679Q694 262 694 250T679 230H98Q84 237 84 250Z"></path></g><g data-mml-node="mo" transform="translate(8422.1, 0)"><text data-variant="normal" transform="matrix(1 0 0 -1 0 0)" font-size="884px" font-family="serif">域</text><text data-variant="normal" transform="translate(900, 0) matrix(1 0 0 -1 0 0)" font-size="884px" font-family="serif">名</text></g></g></g></svg></mjx-container><br>关于Flask部署到云端服务器推荐看教程：<a href="https://tsov.net/home/view/2629/#google_vignette">在阿里云上通过Ubuntu+uwsgi+nginx+mysql部署Flask（新手向）</a>，这里讲了从零开始到部署服务器的完整步骤，如果链接失效的话可以直接百度。</p>
-<p>这里主要讲一下如何将Flask网站从一个阿里云账号A迁移到另一个账号B，首先需要说明的是，阿里云的云服务器IP无法在账号之间迁移，所以我们只能先迁移网站内容然后再修改IP。这里主要分为几个步骤：</p>
-<span id="more"></span>
-
-<ol>
-<li>账号A将之前的服务器生成镜像，然后共享给账号B。这个时候，账号B就有了A的服务器镜像，但是还没有生成实例。镜像和实例的关系可以理解为镜像是安装包，实例是安装好之后的软件，稍后我们将在账号B上安装镜像。</li>
-<li>账号B如果是新用户的话，可以享受非常可观的优惠，这里推荐“共享型n4 ECS”（新用户大约90元/年），其他参数：带宽可以选1M，实例1核2GB，系统盘40GB。购买之后账号B上就有了一个实例。</li>
-<li>接下来就是将之前账号A的镜像安装在账号B的实例上，这里可以看官方手册<a href="https://help.aliyun.com/document_detail/25448.htm?spm=a2c4g.11186623.2.332.42427dddMVvMZv#concept-vbb-ckj-ydb">更换系统盘</a>。然后账号B上就有了和账号A一模一样的实例。</li>
-<li>上述完成之后，启动账号B上的实例，需要做一下账号B的配置：<ul>
-<li>首先在阿里云网页上配置端口，这里需要说的是，22端口是用ssh登陆服务器的端口，而网站需要一个新的端口，这里由于我们默认用的是80，所以需要加入一条80端口的记录，如下图第一行。<img src="http://cdn.yadongz.com//aliyun-ip.jpg" alt="port"></li>
-<li>然后我们需要在账号B的服务器上配置Flask（因为账号B的公网IP和账号A不同）</li>
-</ul>
-</li>
-</ol>
-<p>这里详细介绍怎么配置账号B的Flask，</p>
-<ol>
-<li>首先是nginx的配置，nginx可以理解为实现桥梁的作用，<ul>
-<li>在Flask运行的端口和中间端口搭桥（映射），这里由Flask工程目录下的<code>config.ini</code>配置实现，<code>stats</code>参数是Flask运行时本地的IP及端口，<code>socket</code>是中间端口，也就是实现了5000-&gt;8001。<figure class="highlight shell"><table><tbody><tr><td class="code"><pre><span class="line">[uwsgi]</span><br><span class="line"></span><br><span class="line">socket = 127.0.0.1:8001</span><br><span class="line"></span><br><span class="line">chdir=/root/Predictive_Front-master/</span><br><span class="line"></span><br><span class="line">wsgi-file=app.py</span><br><span class="line"></span><br><span class="line">callable=app</span><br><span class="line"></span><br><span class="line">processes=4</span><br><span class="line"></span><br><span class="line">threads=2</span><br><span class="line"></span><br><span class="line">stats=127.0.0.1:5000</span><br></pre></td></tr></tbody></table></figure></li>
-<li>然后，在中间端口和公网IP的端口之间搭桥。由<code>/etc/nginx/sites-available/default</code>实现：<code>server_name</code>是公网IP，<code>listen</code>是公网IP的端口，<code>uwsgi_pass</code>是中间IP和端口。<strong>注：这个公网IP是必须要改的。</strong><figure class="highlight shell"><table><tbody><tr><td class="code"><pre><span class="line">server {</span><br><span class="line">        listen 80; # 公网IP的端口，需要和之前阿里云的配置一致</span><br><span class="line">        server_name ip; # 公网IP填在这里，替换ip</span><br><span class="line"></span><br><span class="line">        location / {</span><br><span class="line">                include uwsgi_params;</span><br><span class="line">                uwsgi_pass      127.0.0.1:8001;</span><br><span class="line">                uwsgi_param UWSGI_PYHOME /root/Predictive_Front-master/env;</span><br><span class="line">                uwsgi_param UWSGI_CHDIR /root/Predictive_Front-master;</span><br><span class="line">                uwsgi_param UWSGI_SCRIPT app:app;</span><br><span class="line">        }</span><br><span class="line">}</span><br></pre></td></tr></tbody></table></figure></li>
-</ul>
-</li>
-<li>其次，再看supervisor的配置，supervisor的主要功能是保证Flask始终在后台运行，配置文件是<code>/etc/supervisor/conf.d/qinrenSupervisor.conf </code>，这里关键是写对nginx的路径就可以了，如果没有变动可以不改。<figure class="highlight shell"><table><tbody><tr><td class="code"><pre><span class="line">[program: qinren]</span><br><span class="line"></span><br><span class="line">command=/usr/local/bin/uwsgi /root/Predictive_Front-master/config.ini</span><br><span class="line"></span><br><span class="line">directory=/root/Predictive_Front-master</span><br><span class="line"></span><br><span class="line">user=root</span><br><span class="line"></span><br><span class="line">autostart=true</span><br><span class="line"></span><br><span class="line">autorestart=true</span><br><span class="line"></span><br><span class="line">stdout_logfile=/root/Predictive_Front-master/logs/qinrenSupervisor.log</span><br></pre></td></tr></tbody></table></figure></li>
-<li>以上配置完毕后，在命令行运行下面两个命令，重启supervisor和nginx服务，如果可以通过公网IP访问就基本ok了，最后需要在域名配置对应的公网IP，如果能通过域名访问，就大功告成了！<figure class="highlight shell"><table><tbody><tr><td class="code"><pre><span class="line">service supervisor restart</span><br><span class="line">service nginx restart</span><br></pre></td></tr></tbody></table></figure>
-
-</li>
-</ol>
-<p>最后梳理一下几个关键元素的关系：<br><img src="http://cdn.yadongz.com//flask.png" alt="img"></p>
-<!--
-<div id="sequence-0"></div>
--->
-
-<hr>
-<p>因为本人对Flask这块只是略懂皮毛，很多词汇和理解可能不太专业，欢迎批评指正<span class="github-emoji"><span>😄</span><img src="https://github.githubassets.com/images/icons/emoji/unicode/1f604.png?v8" aria-hidden="true" onerror="this.parent.classList.add('github-emoji-fallback')"></span>。另外，有任何相关问题可以在评论区提问~<script src="https://cdnjs.cloudflare.com/ajax/libs/webfont/1.6.27/webfontloader.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/snap.svg/0.4.1/snap.svg-min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore-min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/js-sequence-diagrams/1.0.6/sequence-diagram-min.js"></script><textarea id="sequence-0-code" style="display: none">Flask-&gt;nginx: 映射
-nginx-&gt;Flask: 启动
-supervisor-&gt;nginx: 启动
-Note left of Flask: 127.0.0.1:5000
-nginx-&gt;公网IP: 映射
-Note left of nginx: 127.0.0.1:8001
-Note left of 公网IP: 公网IP:80
-公网IP-&gt;域名: 映射</textarea><textarea id="sequence-0-options" style="display: none">{"theme":"simple","scale":1,"line-width":2,"line-length":50,"text-margin":10,"font-size":12}</textarea><script>  var code = document.getElementById("sequence-0-code").value;  var options = JSON.parse(decodeURIComponent(document.getElementById("sequence-0-options").value));  var diagram = Diagram.parse(code);  diagram.drawSVG("sequence-0", options);</script></p>
-]]></content>
-  </entry>
-  <entry>
     <title>创新港闲置品信息一览表</title>
     <url>/2021/06/24/xian/</url>
     <content><![CDATA[<p>一年一度的毕业季到啦！作为毕业生的你是不是有很多闲置品不知道该何去何从呢？作为学弟学妹的你是不是最近也正好要入手一些好物呢？这个网页主要目的是把闲置品的信息做一个汇总和归类，以下是给三类人群的使用指南：</p>
@@ -157,7 +157,8 @@ Note left of 公网IP: 公网IP:80
 <li>如果您对于该网站有任何需求和建议，</li>
 <li>如果您有兴趣优化本网页，<br>欢迎联系邮箱<a href="mailto:zhangyadong@stu.xjtu.edu.cn">zhangyadong@stu.xjtu.edu.cn</a>或者加微信yadongz_dot_com</li>
 </ol>
-<p>以下就是所有物品的信息啦，欢迎大家补充和分享~</p>
+<hr>
+<p>话不多说，以下就是所有物品的信息啦，欢迎大家补充和分享~</p>
 <span id="more"></span>
 
 <h1 id="电器"><a href="#电器" class="headerlink" title="电器"></a>电器</h1><table>
